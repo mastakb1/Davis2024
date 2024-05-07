@@ -32,13 +32,3 @@ st.write('## Visualisasi Tambahan')
 
 fig_age = px.histogram(df, x='Age', title='Distribusi Umur')
 st.plotly_chart(fig_age)
-
-fig_food = px.bar(df, x='Name', y='Food Supply (Days)', title='Persediaan Makanan (Hari) Berdasarkan Nama')
-st.plotly_chart(fig_food)
-
-fig_training = px.pie(df, names='Training Level', title='Distribusi Tingkat Pelatihan')
-st.plotly_chart(fig_training)
-
-fig_supply = px.scatter_matrix(df, dimensions=['Food Supply (Days)', 'Water per Day (Liters)', 'First Aid Kits'],
-                     title='Scatter Matrix untuk Data Supply')
-st.plotly_chart(fig_supply)
